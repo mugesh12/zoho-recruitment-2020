@@ -1,0 +1,10 @@
+n=int(input())
+if(n==0):
+	print(0)
+else:
+	l=[str(n+1) for i in range(n)]
+	for i in range(n):
+		for j in range(i,n):
+			l[j]=str(int(l[j])-1)
+		print(" ".join(l))
+		
