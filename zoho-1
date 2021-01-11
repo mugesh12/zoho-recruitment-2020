@@ -1,0 +1,13 @@
+n=int(input())
+if(n==0):
+	print(0)
+for i in range(n):
+	l=[]
+	a=n
+	for j in range(n):
+		if(j<i):
+			l.append(str(a))
+			a=a-1
+		else:
+			l.append(str(a))
+	print(" ".join(l))
